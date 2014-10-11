@@ -1,0 +1,1 @@
+# MICA Graphic Design Website
