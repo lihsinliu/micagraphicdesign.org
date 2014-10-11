@@ -1,0 +1,23 @@
+{
+  "name": "micagraphicdesign.org",
+  "version": "2.0.0",
+  "description": "Markup for MICA Graphic Design Site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mica-gd-430-kutil/micagraphicdesign.org.git"
+  },
+  "author": "Ben Kutil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mica-gd-430-kutil/micagraphicdesign.org/issues"
+  },
+  "homepage": "https://github.com/mica-gd-430-kutil/micagraphicdesign.org",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-assemble": "^0.1.7"
+  }
+}
