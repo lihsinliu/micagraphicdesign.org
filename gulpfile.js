@@ -14,6 +14,7 @@ var assembleOptions = {
 
 gulp.task('assemble', function () {
   gulp.src('app/templates/pages/*.hbs')
+    .pipe($.plumber())
     .pipe($.assemble(assembleOptions))
     .pipe(gulp.dest('.tmp'))
     .pipe(reload({stream: true}))
@@ -36,7 +37,6 @@ gulp.task('bs', function() {
 
 
 gulp.task('watch', function () {
-
 	gulp.watch('app/templates/**/*.hbs', ['assemble', reload])
 })
 
