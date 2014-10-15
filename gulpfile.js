@@ -12,14 +12,26 @@ var assembleOptions = {
   layout: 'default.hbs'
 };
 
-gulp.task('assemble', function () {
-  gulp.src('app/templates/pages/*.hbs')
+gulp.task('html:assemble', function () {
+  return gulp.src('app/templates/pages/*.hbs')
     .pipe($.plumber())
     .pipe($.assemble(assembleOptions))
     .pipe(gulp.dest('.tmp'))
     .pipe(reload({stream: true}))
     .pipe($.size({title: 'HTML'}))
     .pipe($.size({title: 'HTML gzip', gzip: true}));
+});
+
+
+gulp.task('copy:all', function () {
+  return gulp.src([
+      '.tmp/*.html',
+      'app/css',
+      'app/img',
+      'app/js'
+    ])
+    .pipe(gulp.dest('dist'))
+    .pipe($.size({title: 'Assets'}))
 });
 
 
@@ -37,8 +49,8 @@ gulp.task('bs', function() {
 
 
 gulp.task('watch', function () {
-	gulp.watch('app/templates/**/*.hbs', ['assemble', reload])
+	gulp.watch('app/templates/**/*.hbs', ['html:assemble', reload])
 })
 
 
-gulp.task('default', ['watch','assemble','bs']);
+gulp.task('default', ['watch','html:assemble','bs']);
