@@ -13,30 +13,30 @@
 		<!-- Commented Out Reset - Remove here to enable
         <link rel="stylesheet" href="css/reset.css">
         End of comment, remove to enable -->
-        
+
         <!-- Skeleton
         <link rel="stylesheet" href="css/skeleton.css">-->
         <link rel="stylesheet" href="css/helpers.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body{{#if body-class }} class="{{ body-class }}"{{/if}}>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <div class="canvas">
           <div class="shim">
-            
+
             {{> masthead }}
-            
-            
+
+
             <main class="page" role="main">
             {{> body }}
             </main><!-- /.page -->
           </div><!-- /.shim -->
-          
-          
+
+
           {{> footer}}
         </div><!-- /.canvas -->
 
