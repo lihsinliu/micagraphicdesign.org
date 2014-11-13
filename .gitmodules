@@ -1,4 +1,0 @@
-[submodule "dist"]
-	path = dist
-	url = git@github.com:mica-gd-430-kutil/micagraphicdesign.org.git
-	branch = gh-pages
