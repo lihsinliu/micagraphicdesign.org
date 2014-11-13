@@ -17,7 +17,7 @@ gulp.task('html:assemble', function () {
     .pipe($.plumber())
     .pipe($.assemble(assembleOptions))
     .pipe(gulp.dest('.tmp'))
-    .pipe(reload({stream: true}))
+    .pipe(reload({stream: true, once: true}))
     .pipe($.size({title: 'HTML'}))
     .pipe($.size({title: 'HTML gzip', gzip: true}));
 });
@@ -38,18 +38,17 @@ gulp.task('copy:all', function () {
 // Static server
 gulp.task('bs', function() {
     browserSync({
+        notify: true,
         server: {
             baseDir: ['.tmp', 'app'],
-            routes: {
-            	'/bower_components': '../bower_components'
-            }
+            directory: true
         }
     });
 });
 
 
 gulp.task('watch', function () {
-	gulp.watch('app/templates/**/*.hbs', ['html:assemble', reload])
+	gulp.watch('app/templates/**/*.hbs', ['html:assemble']);
 })
 
 
