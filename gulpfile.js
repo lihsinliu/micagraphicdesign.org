@@ -6,12 +6,15 @@ var $ = require('gulp-load-plugins')();
 var del = require('del');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+var runSequence = require('run-sequence');
 
 var assembleOptions = {
   partials: 'app/templates/partials/*.hbs',
   layoutdir: 'app/templates/layouts/',
   layout: 'default.hbs'
 };
+
+gulp.task('clean', ['clean:tmp', 'clean:dist']);
 
 gulp.task('clean:tmp', function (cb) {
   del([
@@ -21,8 +24,10 @@ gulp.task('clean:tmp', function (cb) {
 
 gulp.task('clean:dist', function (cb) {
   del([
-    'dist/**',
-    '!dist/.git'
+    'dist/*',
+    '!dist/.git',
+    '!dist/.gitignore',
+    '!dist/.git*'
   ], cb);
 });
 
@@ -61,8 +66,8 @@ gulp.task('bs', function() {
 });
 
 
-gulp.task('build', ['clean:dist'],function () {
-  gulp.start('copy:all');
+gulp.task('build', ['clean'],function () {
+  runSequence('html:assemble','copy:all');
 });
 
 
