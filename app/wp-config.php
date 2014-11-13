@@ -1,5 +1,5 @@
 <?php
-/** 
+/**
  * The base configurations of the WordPress.
  *
  * This file has the following configurations: MySQL settings, Table Prefix,
@@ -14,18 +14,20 @@
  * @package WordPress
  */
 
+define('WP_DEBUG', true);
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'db94105_micabfa');
+define('DB_NAME', 'mca-web-dev');
 
 /** MySQL database username */
-define('DB_USER', '1clk_wp_k8bYugd');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'ODisMvNN');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', $_ENV{DATABASE_SERVER});
+define('DB_HOST', 'localhost:8889');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

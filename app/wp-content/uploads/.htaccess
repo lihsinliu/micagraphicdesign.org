@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  # Replace http://stevegrunwell.com with your production site's domain name
+  RewriteRule (.*) http://www.micagraphicdesign.org/wp-content/uploads/$1
+</IfModule>
