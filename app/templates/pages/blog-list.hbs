@@ -2,7 +2,7 @@
 title: MICA Graphic Design Blog
 body-class: layout blog list
 ---
-<div class="main">
+<div class="main content ui">
   <h1 class="page heading ui">Blog</h1>
 
   <!--  ====================================================================
@@ -379,4 +379,20 @@ body-class: layout blog list
       </ul>
     </nav><!-- /.items pagination -->
   </div><!-- /.items posts ui -->
-</div>
+</div> <!-- /.main.content.ui -->
+
+<div class="sub content ui">
+  <div class="subscribe segment">
+    {{> signup }}
+    <a href="#" class="rss">Subscribe to RSS</a>
+  </div> <!-- /.subscribe -->
+  <nav class="categories menus segment ui">
+    <strong class="menus title">Categories</strong>
+    <ul class="menu">
+      <li class="item"><a href="#" class="category link">Lecture</a></li>
+      <li class="item"><a href="#" class="category link">Exhibition</a></li>
+      <li class="item"><a href="#" class="category link">Workshop</a></li>
+    </ul>
+  </nav> <!-- /.categories -->
+  <div class="archives segment"><a href="#" class="button archive">View All Blog Posts</a></div>
+</div><!-- /.sub content ui -->
