@@ -22,6 +22,7 @@ gulp.task('clean:tmp', function (cb) {
 gulp.task('clean:dist', function (cb) {
   del([
     'dist/**',
+    '!dist/.git'
   ], cb);
 });
 
@@ -38,6 +39,7 @@ gulp.task('html:assemble', function () {
 
 gulp.task('copy:all', function () {
   return gulp.src([
+      'README.md',
       '.tmp/*.html',
       'app/**',
       '!app/templates/**'
