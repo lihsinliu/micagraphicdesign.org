@@ -3,6 +3,7 @@
 
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+var del = require('del');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
@@ -11,6 +12,18 @@ var assembleOptions = {
   layoutdir: 'app/templates/layouts/',
   layout: 'default.hbs'
 };
+
+gulp.task('clean:tmp', function (cb) {
+  del([
+    '.tmp/**',
+  ], cb);
+});
+
+gulp.task('clean:dist', function (cb) {
+  del([
+    'dist/**',
+  ], cb);
+});
 
 gulp.task('html:assemble', function () {
   return gulp.src('app/templates/pages/*.hbs')
@@ -26,9 +39,8 @@ gulp.task('html:assemble', function () {
 gulp.task('copy:all', function () {
   return gulp.src([
       '.tmp/*.html',
-      'app/css',
-      'app/img',
-      'app/js'
+      'app/**',
+      '!app/templates/**'
     ])
     .pipe(gulp.dest('dist'))
     .pipe($.size({title: 'Assets'}))
@@ -47,9 +59,16 @@ gulp.task('bs', function() {
 });
 
 
+gulp.task('build', ['clean:dist'],function () {
+  gulp.start('copy:all');
+});
+
+
 gulp.task('watch', function () {
 	gulp.watch('app/templates/**/*.hbs', ['html:assemble']);
 })
 
 
-gulp.task('default', ['watch','html:assemble','bs']);
+gulp.task('default', ['clean:tmp','html:assemble','bs'], function (){
+  gulp.start('watch');
+});
