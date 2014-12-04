@@ -1,0 +1,48 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+    <link href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+
+
+
+
+<aside class="profiles">
+      <div class="profile card">
+        <figure class="attach">
+          <img class="src" src="http://placecage.com/150/150" alt=""></figure>
+        <div class="content" style="margin-right:px">
+          <p class="heading">Erin Bender</p>
+          <ul class="link list">
+            <li class="item"><a href="#">Website</a></li>
+            <li class="item"><a href="#"><i class="icon twitter"></i> Twitter</a></li>
+            <li class="item"><a href="#"><i class="icon instagram"></i> Instagram</a></li>
+            <li class="item"><a href="#"><i class="icon behance"></i> Behance</a></li>
+          </ul>
+        </div>
+      </div> <!-- /.profile.card -->
+
+
+      <div class="profile card">
+        <figure class="attach">
+          <img class="src" src="http://placecage.com/150/150" alt=""></figure>
+        <div class="content">
+          <p class="heading">Kristen Bender</p>
+          <ul class="link list">
+            <li class="item"><a href="#">Website</a></li>
+            <li class="item"><a href="#"><i class="icon twitter"></i> Twitter</a></li>
+            <li class="item"><a href="#"><i class="icon instagram"></i> Instagram</a></li>
+            <li class="item"><a href="#"><i class="icon behance"></i> Behance</a></li>
+          </ul>
+        </div>
+      </div><!-- /.profile.card -->
+    </aside> <!-- /.profiles -->
+        </div>
+    <div class="bottom-divider"></div> 
+    </div>
