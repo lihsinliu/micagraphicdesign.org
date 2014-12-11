@@ -1,7 +1,7 @@
 <html><head>
     <meta charset="UTF-8">
 
-    <title>Profile</title>
+    <title>Blog-Detail</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
 
@@ -26,6 +26,7 @@
 </head>
 
 <body>
+	<div id=wrapper>
 <div class="loader"></div>
     <div id="menu-toggle">
         <div id="menu-icon">
@@ -36,7 +37,7 @@
         <nav class="navigation menus">
             <ul class="menu level-1" id="navlist">
                 <li>
-                    <a class="mark" href="/" title="MICA Graphic Design">MICA
+                    <a style= "" class="mark" href="/" title="MICA Graphic Design">MICA
                     Graphic Design</a>
                 </li>
 
@@ -134,7 +135,7 @@
 <!--Begin About Section-->
     <div id="about">
 <div class="content">
-  <h1 class="p-name heading">Alumni Profile: Erin &amp; Kristin Bender</h1>
+  <h1 class="p-name heading" style="padding-left: 10px">Alumni Profile: Erin &amp; Kristin Bender</h1>
   
         	 <img class="src" src="http://micagraphicdesign.org/wp-content/uploads/2013/07/396532_10150510187335678_494321673_n-1-470x317.jpg" alt="Erin &amp; Kristen Bender" width="100%" >
              <ul id="top-social">
@@ -192,6 +193,7 @@
             <p>
         <strong>Current Endeavors? Any favorite projects or new subjects you’re investigating? &nbsp;</strong> 
       </p>
+                  <p>
                    <em>Erin</em>
         : On top of finishing up my 2-year Presidential term with the AIGA Austin chapter, I’ve currently been in the process of starting up my own small business.&nbsp;After 8 1/2 years of working in agencies with regional and global clients, I chose to work for myself after a round of layoffs; a year later, as business was booming, I chose to make the plunge and turn it into a formal business!
       </p>
@@ -306,27 +308,38 @@
 
 
         <div class="bottom-divider"></div>
+       
+    
+
+
+
+
+
+
+        
+    
+    
+    
+    
     
 
     <div id="footer">
         <nav class="departments menus">
             <ul class="menu">
-                <li class="item">
+                <li class="department">
                     <a class="link" href="http://www.mica.edu" title="MICA.edu">MICA.edu</a>
                 </li>
 
-                <li class="item">
+<li class="department">
                     <a class="link" href="http://micadesign.org/" title="GD MFA">GD MFA</a>
                 </li>
 
-                <li class="item">
+<li class="department">
                     <a class="link" href="http://micagraphicdesignpb.org/" title="post-bac">Post-Bac</a>
                 </li>
             </ul>
         </nav>
-
-
-      <div class="subscribe segment" style="text-align:right">
+       <div class="subscribe segment">
     <!-- Begin MailChimp Signup Form -->
     <div class="email" id="mc_embed_signup">
     <form action="//baltimorebrew.us4.list-manage.com/subscribe/post?u=e16fe3f86f4146722d64dcc06&amp;id=bfe8fc4b48" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -345,20 +358,34 @@
         </div>
     </form>
     </div>
-            <p class="legal" style="text-align: center">© Maryland
-            Institute College of Art</p>
 
-        </div>
+
+    <div class="copy">
+    <p class="legal" style="text-align: center">© Maryland
+            Institute College of Art</p>
     </div>
 	
 	
 
 	
-
-	
 	
   
+<script src="external/jquery/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
 
+
+
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+
+<script src="js/index.js"></script>
+  
+
+<script src="js/masonry.js"></script>
+<script src="js/main.js"></script>
 
 
 <script>
@@ -407,5 +434,5 @@ $(window).load(function() {
 	$(".loader").fadeOut("slow");
 })
 </script>
-
+</div>
 </body></html>

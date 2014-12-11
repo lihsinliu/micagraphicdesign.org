@@ -1,13 +1,14 @@
 <html><head>
     <meta charset="UTF-8">
 
-    <title>MICA</title>
+    <title>Event-Detail</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/jquery-ui.css" rel="stylesheet">
 </head>
 
 <body>
+	
 <div class="loader"></div>
     <div id="menu-toggle">
         <div id="menu-icon">
@@ -21,6 +22,9 @@
                     <a class="mark" href="/" title="MICA Graphic Design">MICA
                     Graphic Design</a>
                 </li>
+                
+                
+            
 
                 <li>
                     <a class="link" href="#Events" title="Events">Events</a>
@@ -111,24 +115,25 @@
   
 </ul>
 </div>
+<div id=wrapper>
 
 
 <!--Begin Section-->   
-          <div class="main content ui" style="width: ; float: right;">
+          <div class="main content ui" style="float: right; max-width: 50%; padding: 10px 10px 10px 10px; ">
   <article class="h-entry story" id="post-6143">
-    <figure class="attach">
-      <img class="src" src="http://micagraphicdesign.org/wp-content/uploads/2014/10/sven-470x608.jpg" width:"">
-      <figcaption class="caption">
+ 
+      <img class="src" src="http://micagraphicdesign.org/wp-content/uploads/2014/10/sven-470x608.jpg" >
+      <figcaption class="caption" style="text-align: right; padding:10px 0px 10px 0px">
         poster design by <a href="#">Michael Auer 16</a>
       </figcaption>
-    </figure> <!-- /.attach -->
+    
   </article>
            </div>
            
 
 	           
 	           
-	            <div class="content" style="width: auto;">
+	            <div class="content" style="max-width:50%; padding: 10px 10px 10px 10px">
       <header class="header event card ui">
         <h1 class="p-name heading">Visiting Designer Sven Vogel Oct 16</h1>
         <div class="meta">
@@ -136,34 +141,40 @@
           <p class="location">
             <a class="map link" href="#">Main Building</a>
           </p>
-          <div class="byline"><em class="story">Posted </em>by: <a class="link" href="#heather">Heather Kohlberger</a>
+          <div class="byline"><em class="story">Posted </em>by: <a class="link" href="#heather">Heather Kohlberger</a></div>
           
                          
+         <div >
+        <p>Join Sven Vogel, international brand designer, of Hamburg Germany for a presentation about his work. Great presentation for students interested in international design or study abroad.</p>
         
+        
+        
+        
+      </div>
+      
+
           
           </div>
 
           
-                <div class="body">
-        <p>Join Sven Vogel, international brand designer, of Hamburg Germany for a presentation about his work. Great presentation for students interested in international design or study abroad.</p>
-      </div>
-
+               
 
         </div>
 
               </header> <!-- /.header -->
 
-
-
-    
-    </div>
-
-           </div>
-        
-
-    </div>
 <!--End Experience Section-->
 
+
+
+            <nav class="categories menus ui">
+          <ul class="menu ui" style="margin-top:405px;">
+            <li class="item"><a href="#" class="category link">lecture</a></li>
+            <li class="item"><a href="#" class="tag link">brand</a></li>
+            <li class="item"><a href="#" class="tag link">identity</a></li>
+
+          </ul>
+        </nav>
 
 
 
@@ -174,20 +185,9 @@
         
  
 
-            <nav class="categories menus ui">
-          <ul class="menu ui">
-            <li class="item"><a href="#" class="category link">lecture</a></li>
-          </ul>
-        </nav>
-        
-               <nav class="tags menus ui">
-          <ul class="menu ui">
-            <li class="item"><a href="#" class="tag link">brand</a></li>
-            <li class="item"><a href="#" class="tag link">identity</a></li>
-          </ul>
-        </nav>
-
     
+    
+
     
     
     
@@ -196,22 +196,20 @@
     <div id="footer">
         <nav class="departments menus">
             <ul class="menu">
-                <li class="item">
+                <li class="department">
                     <a class="link" href="http://www.mica.edu" title="MICA.edu">MICA.edu</a>
                 </li>
 
-                <li class="item">
+<li class="department">
                     <a class="link" href="http://micadesign.org/" title="GD MFA">GD MFA</a>
                 </li>
 
-                <li class="item">
+<li class="department">
                     <a class="link" href="http://micagraphicdesignpb.org/" title="post-bac">Post-Bac</a>
                 </li>
             </ul>
         </nav>
-
-
-      <div class="subscribe segment" style="text-align:right">
+       <div class="subscribe segment">
     <!-- Begin MailChimp Signup Form -->
     <div class="email" id="mc_embed_signup">
     <form action="//baltimorebrew.us4.list-manage.com/subscribe/post?u=e16fe3f86f4146722d64dcc06&amp;id=bfe8fc4b48" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -230,10 +228,11 @@
         </div>
     </form>
     </div>
-            <p class="legal" style="text-align: center">© Maryland
-            Institute College of Art</p>
 
-        </div>
+
+    <div class="copy">
+    <p class="legal" style="text-align: center">© Maryland
+            Institute College of Art</p>
     </div>
 	
 	
@@ -305,5 +304,5 @@ $(window).load(function() {
 	$(".loader").fadeOut("slow");
 })
 </script>
-
+</div>
 </body></html>

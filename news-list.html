@@ -1,13 +1,14 @@
 <html><head>
     <meta charset="UTF-8">
 
-    <title>Blog</title>
+    <title>News-List</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/jquery-ui.css" rel="stylesheet">
 </head>
 
 <body>
+	<div id=wrapper>
 <div class="loader"></div>
     <div id="menu-toggle">
         <div id="menu-icon">
@@ -111,7 +112,7 @@
   
 </ul>
 </div>
-<h1 style="padding-top:90px; padding-left: 10px; text-decoration: underline;">Blog</h1>
+<h1 class="header">News</h1>
 
 <div id="container" style=" text-align:center;">
 
@@ -251,6 +252,13 @@
         
     
     
+
+
+
+
+        
+    
+    
     
     
     
@@ -258,22 +266,20 @@
     <div id="footer">
         <nav class="departments menus">
             <ul class="menu">
-                <li class="item">
+                <li class="department">
                     <a class="link" href="http://www.mica.edu" title="MICA.edu">MICA.edu</a>
                 </li>
 
-                <li class="item">
+<li class="department">
                     <a class="link" href="http://micadesign.org/" title="GD MFA">GD MFA</a>
                 </li>
 
-                <li class="item">
+<li class="department">
                     <a class="link" href="http://micagraphicdesignpb.org/" title="post-bac">Post-Bac</a>
                 </li>
             </ul>
         </nav>
-
-
-      <div class="subscribe segment" style="text-align:right">
+       <div class="subscribe segment">
     <!-- Begin MailChimp Signup Form -->
     <div class="email" id="mc_embed_signup">
     <form action="//baltimorebrew.us4.list-manage.com/subscribe/post?u=e16fe3f86f4146722d64dcc06&amp;id=bfe8fc4b48" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -292,10 +298,11 @@
         </div>
     </form>
     </div>
-            <p class="legal" style="text-align: center">© Maryland
-            Institute College of Art</p>
 
-        </div>
+
+    <div class="copy">
+    <p class="legal" style="text-align: center">© Maryland
+            Institute College of Art</p>
     </div>
 	
 	
@@ -367,5 +374,5 @@ $(window).load(function() {
 	$(".loader").fadeOut("slow");
 })
 </script>
-
+</div>
 </body></html>

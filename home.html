@@ -1,13 +1,14 @@
 <html><head>
     <meta charset="UTF-8">
 
-    <title>Event</title>
+    <title>Home</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/jquery-ui.css" rel="stylesheet">
 </head>
 
 <body>
+	<div id=wrapper>
 <div class="loader"></div>
     <div id="menu-toggle">
         <div id="menu-icon">
@@ -110,16 +111,49 @@
   
 </ul>
 </div>
-<h1 style="padding-left: 10px; text-decoration: underline;">Event</h1>
+
 
 <div id="container" style=" text-align:center;">
 
 		<div class="grid-sizer"></div>
+<h1 class="item" style="width: 100%; text-align: left;">Event</h1>
 
-		
-		
-
-		
+		<div class="item">
+			<img src="http://placekitten.com/650/650" class="image">
+			<a class="overlay" href="#">
+				<h3 class="title">Event</h3>
+				<div class="description">
+					<p>
+						Oct 12 2014 12:00 PM <br>
+						Main Building
+					</p>
+				</div>
+			</a>
+		</div>	
+		<div class="item">
+			<img src="http://placekitten.com/650/650" class="image">
+			<a class="overlay" href="#">
+				<h3 class="title">Event</h3>
+				<div class="description">
+					<p>
+						Oct 12 2014 12:00 PM <br>
+						Main Building
+					</p>
+				</div>
+			</a>
+		</div>	
+		<div class="item">
+			<img src="http://placekitten.com/650/650" class="image">
+			<a class="overlay" href="#">
+				<h3 class="title">Event</h3>
+				<div class="description">
+					<p>
+						Oct 12 2014 12:00 PM <br>
+						Main Building
+					</p>
+				</div>
+			</a>
+		</div>	
 		
 			<div class="item">
 			<img src="http://placekitten.com/650/650" class="image">
@@ -157,11 +191,28 @@
 				</div>
 			</a>
 		</div>	
+		<div class="item" id="pager" style="width: 100%; text-align: right;">
+            <nav class="menus paging">
+                <ul class="menu paginate"style="width: 100%; text-align: right;">
+
+
+                    <li style="list-style: none; display: inline">
+                        <a class="button" href="#" style="padding-left:20px;">View All</a>
+                    </li>
+                </ul>
+            </nav><!-- /.menus.paging -->
+        </div>
+        
+        
+        <div class="bottom-divider item"></div>
+        <h1 class="item" style="width: 100%; text-align: left;">Current Work</h1>
+		
+				
 				<div class="item">
 		     
           <img src="http://lorempixel.com/500/500/abstract/1" class="image">
 			<a class="overlay" href="#">
-				<h3 class="name">Name of Artist</h3>
+				<h3 class="title">Name of Artist</h3>
 				<div class="description">
 					<p> Title of Piece 1
 					
@@ -175,7 +226,7 @@
 		     
           <img src="http://lorempixel.com/500/500/abstract/1" class="image">
 			<a class="overlay" href="#">
-				<h3 class="name">Name of Artist</h3>
+				<h3 class="title">Name of Artist</h3>
 				<div class="description">
 					<p> Title of Piece 1
 					
@@ -189,7 +240,7 @@
 		     
           <img src="http://lorempixel.com/500/500/abstract/1" class="image">
 			<a class="overlay" href="#">
-				<h3 class="name">Name of Artist</h3>
+				<h3 class="title">Name of Artist</h3>
 				<div class="description">
 					<p> Title of Piece 1
 					
@@ -199,12 +250,11 @@
 			
 			
 		</div>	
-		
 				<div class="item">
 		     
           <img src="http://lorempixel.com/500/500/abstract/1" class="image">
 			<a class="overlay" href="#">
-				<h3 class="name">Name of Artist</h3>
+				<h3 class="title">Name of Artist</h3>
 				<div class="description">
 					<p> Title of Piece 1
 					
@@ -214,13 +264,11 @@
 			
 			
 		</div>	
-		
-		
 				<div class="item">
 		     
           <img src="http://lorempixel.com/500/500/abstract/1" class="image">
 			<a class="overlay" href="#">
-				<h3 class="name">Name of Artist</h3>
+				<h3 class="title">Name of Artist</h3>
 				<div class="description">
 					<p> Title of Piece 1
 					
@@ -230,13 +278,11 @@
 			
 			
 		</div>	
-		
-		
-		<div class="item">
+				<div class="item">
 		     
           <img src="http://lorempixel.com/500/500/abstract/1" class="image">
 			<a class="overlay" href="#">
-				<h3 class="name">Name of Artist</h3>
+				<h3 class="title">Name of Artist</h3>
 				<div class="description">
 					<p> Title of Piece 1
 					
@@ -252,19 +298,24 @@
 		
 		</div>
         
-        <div class="item" id="pager">
+        <div class="item" id="pager" style="width: 100%; text-align: right;">
             <nav class="menus paging">
-                <ul class="menu paginate">
+                <ul class="menu paginate"style="width: 100%; text-align: right;">
 
-                  
 
                     <li style="list-style: none; display: inline">
-                        <a class="button" href="#" style="padding-left:20px;">View All Events</a>
+                        <a class="button" href="#" style="padding-left:20px;"> View All</a>
                     </li>
                 </ul>
             </nav><!-- /.menus.paging -->
         </div>
+        
+           <div class="bottom-divider item"></div>
+        
         </div>
+        
+        
+       
 
 
 
@@ -283,22 +334,20 @@
     <div id="footer">
         <nav class="departments menus">
             <ul class="menu">
-                <li class="item">
+                <li class="department">
                     <a class="link" href="http://www.mica.edu" title="MICA.edu">MICA.edu</a>
                 </li>
 
-                <li class="item">
+<li class="department">
                     <a class="link" href="http://micadesign.org/" title="GD MFA">GD MFA</a>
                 </li>
 
-                <li class="item">
+<li class="department">
                     <a class="link" href="http://micagraphicdesignpb.org/" title="post-bac">Post-Bac</a>
                 </li>
             </ul>
         </nav>
-
-
-      <div class="subscribe segment" style="text-align:right">
+       <div class="subscribe segment">
     <!-- Begin MailChimp Signup Form -->
     <div class="email" id="mc_embed_signup">
     <form action="//baltimorebrew.us4.list-manage.com/subscribe/post?u=e16fe3f86f4146722d64dcc06&amp;id=bfe8fc4b48" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -317,10 +366,11 @@
         </div>
     </form>
     </div>
-            <p class="legal" style="text-align: center">© Maryland
-            Institute College of Art</p>
 
-        </div>
+
+    <div class="copy">
+    <p class="legal" style="text-align: center">© Maryland
+            Institute College of Art</p>
     </div>
 	
 	
@@ -392,5 +442,5 @@ $(window).load(function() {
 	$(".loader").fadeOut("slow");
 })
 </script>
-
+</div>
 </body></html>
